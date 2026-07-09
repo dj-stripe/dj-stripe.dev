@@ -8,10 +8,10 @@
 		"build-search-index": "node scripts/build-search-index.js",
 		"build": "npm run fetch-docs && npm run build-search-index && next build",
 		"start": "next start",
-		"lint": "eslint .",
+		"lint": "oxlint",
 		"format": "prettier --write src/ *.md *.json",
 		"type-check": "tsc --noEmit",
-		"ci": "eslint . && tsc --noEmit"
+		"ci": "oxlint && tsc --noEmit"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^7.3.0",
@@ -28,15 +28,13 @@
 		"unist-util-visit": "^5.1.0"
 	},
 	"devDependencies": {
-		"@eslint/eslintrc": "^3",
 		"@tailwindcss/postcss": "^4.3.2",
 		"@types/mdast": "^4.0.4",
 		"@types/node": "^26",
-		"@types/unist": "^3.0.3",
 		"@types/react": "19.2.17",
 		"@types/react-dom": "19.2.3",
-		"eslint": "^9",
-		"eslint-config-next": "16.2.10",
+		"@types/unist": "^3.0.3",
+		"oxlint": "^1.73.0",
 		"prettier": "^3.9.4",
 		"tailwindcss": "^4.3.2",
 		"tailwindcss-animate": "^1.0.7",
