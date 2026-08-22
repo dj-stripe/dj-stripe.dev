@@ -35,6 +35,7 @@ MODULES = [
     "djstripe.models.billing",
     "djstripe.models.checkout",
     "djstripe.models.payment_methods",
+    "djstripe.models.pricing_table",
     "djstripe.models.connect",
     "djstripe.models.account",
     "djstripe.models.api",

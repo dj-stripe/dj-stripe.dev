@@ -178,6 +178,7 @@ export async function getNavigation(version?: string): Promise<NavigationItem[]>
 					path: "/usage/managing_subscriptions",
 				},
 				{ title: "Stripe Checkout", path: "/usage/using_stripe_checkout" },
+				{ title: "Idempotency", path: "/usage/idempotency" },
 				{ title: "Stripe Elements (JS)", path: "/stripe_elements_js" },
 				{
 					title: "Manual syncing",
@@ -194,6 +195,7 @@ export async function getNavigation(version?: string): Promise<NavigationItem[]>
 			title: "Project",
 			path: "/project",
 			children: [
+				{ title: "Contributing", path: "/project/contributing" },
 				{ title: "Release process", path: "/project/release_process" },
 				{ title: "Support", path: "/project/support" },
 				{ title: "Test fixtures", path: "/project/test_fixtures" },
